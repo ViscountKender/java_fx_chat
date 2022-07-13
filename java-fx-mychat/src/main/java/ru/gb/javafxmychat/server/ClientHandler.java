@@ -96,6 +96,7 @@ public class ClientHandler {
         try {
             out.writeUTF(message);
         } catch (IOException e) {
+
             e.printStackTrace();
         }
     }
