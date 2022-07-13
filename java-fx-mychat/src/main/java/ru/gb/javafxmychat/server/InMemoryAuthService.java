@@ -19,6 +19,7 @@ public class InMemoryAuthService implements AuthService {
             this.nick = nick;
         }
         public String getNick() {
+
             return nick;
         }
         public String getLogin() {

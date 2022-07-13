@@ -82,6 +82,8 @@ public class ChatClient {
             out.writeUTF(message);
         } catch (IOException e) {
             e.printStackTrace();
+
         }
+
     }
 }
