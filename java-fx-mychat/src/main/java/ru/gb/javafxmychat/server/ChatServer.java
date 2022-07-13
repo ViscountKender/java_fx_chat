@@ -30,7 +30,7 @@ public class ChatServer {
             client.sendMessage(message);
         }
     }
-    // Метед отправки личных сообщений
+    // Метод отправки личных сообщений
     public void messageToClient(String nick, String message){
         for (ClientHandler client : clients) {
             if (nick.equals(client.getNick())){
@@ -54,6 +54,7 @@ public class ChatServer {
 
     public void unsubscribe(ClientHandler client) {
         //Убираем пользователя из списка клиентов при отключении клиента
+
         clients.remove(client);
     }
 }
